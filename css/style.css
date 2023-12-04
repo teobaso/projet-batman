@@ -1,0 +1,97 @@
+/* 
+    ================================
+    =   SECTION 1 :   RESET CSS    =
+    ================================ 
+*/
+
+html{
+    font-size: 62.5%; /* 16px x 62.5% = 10 rem */
+}
+
+body{
+    font: 1.6rem sans-serif;
+    margin: 0;
+    letter-spacing: 0.1rem; /* 1px */
+    line-height: 1.6;
+    background-color: var(--theme-bg-color);
+}
+
+h1, h2, h3, p, figure, ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-weight: normal;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+/* 
+    ================================
+    =   SECTION 2 :   THEME CSS    =
+    ================================ 
+*/
+
+/* Variables */
+
+:root{
+    --theme-bg-color : rgb(45, 52, 54);
+    --theme-text-color : rgb(255, 255, 255);
+    --letter-color-default : #222;
+    --bgcolor-header : #222;
+    --bgcolor-list : rgb(223, 230, 233);
+}
+
+/* header */
+
+header{
+    background-color: var(--bgcolor-header);
+}
+
+header > h1{
+    text-align: center;
+    color: var(--theme-text-color);
+    line-height: 6.5rem;
+    margin-bottom: 5rem;
+}
+
+header > h1 span{
+    vertical-align: 0.2rem; /* 2px */
+}
+
+/* figure */ 
+
+figure{
+    max-width: 100rem; /* 1200px */
+    margin: 0 auto;
+    background-color: var(--theme-text-color);
+    padding: 1rem;
+}
+
+figure img{
+    display: inline-block;
+    width: 100%;
+}
+
+figure figcaption ul{
+    line-height: 4rem;
+}
+
+figure figcaption ul.list-movie li{
+    padding: 0 .5rem;
+}
+
+figure figcaption ul.list-movie li:nth-child(2n + 2){ /* 1 sur 2 à partir du deuxième */
+    background-color: var(--bgcolor-list);
+}
+
+/* detail */
+
+details summary{
+    line-height: 4rem;
+    background-color: var(--bgcolor-list);
+    padding-left: 0.5rem;
+}
+
