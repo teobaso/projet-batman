@@ -40,7 +40,7 @@ ion-icon{
     scrollbar-color: #000 #fff;
 }
 /* webkit */
-*::-webkit-scrollbar{
+::-webkit-scrollbar{
     width: 1rem;
 }
 
@@ -122,7 +122,7 @@ details summary{
     padding-left: 0.5rem;
 }
 
-details summary::marker {
+details summary::-webkit-details-marker, details summary::marker {
     display: none;
     content: "";
 }
