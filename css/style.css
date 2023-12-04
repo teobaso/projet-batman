@@ -29,6 +29,9 @@ h1, h2, h3, p, figure, ul{
     box-sizing: border-box;
 }
 
+ion-icon{
+    vertical-align: -0.4rem;
+}
 
 /* 
     ================================
@@ -100,10 +103,30 @@ details summary{
     padding-left: 0.5rem;
 }
 
+details summary::marker {
+    display: none;
+    content: "";
+}
+
+summary:after{
+    content: "+";
+    color: #222;
+    float: left;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-right: 0.3rem;
+}
+
+details[open] summary:after {
+    content: "-";
+}
+
 details p{
     line-height: 2.5rem;
     padding-left: 0.5rem;
 }
+
+/* footer */
 
 footer *{
     text-align: center;
