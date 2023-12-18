@@ -111,7 +111,7 @@ footer *{
     }
 }
 
-@media screen and (min-width : 90rem) {
+@media screen and (min-width : 80rem) {
     figure figcaption ul {
         line-height: 3rem;
     }
